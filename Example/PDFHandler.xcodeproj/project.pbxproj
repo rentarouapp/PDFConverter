@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C2CEB1482E98FB800007005C /* PDFConverter in Frameworks */ = {isa = PBXBuildFile; productRef = C2CEB1472E98FB800007005C /* PDFConverter */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C2049D762E7FF08300A47743 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2CEB1482E98FB800007005C /* PDFConverter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,7 @@
 			);
 			name = PDFHandler;
 			packageProductDependencies = (
+				C2CEB1472E98FB800007005C /* PDFConverter */,
 			);
 			productName = PDFHandler;
 			productReference = C2049D652E7FF08200A47743 /* PDFHandler.app */;
@@ -203,6 +209,9 @@
 			);
 			mainGroup = C2049D5C2E7FF08200A47743;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C2CEB1462E98FB800007005C /* XCLocalSwiftPackageReference "../../PDFConverter" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C2049D662E7FF08200A47743 /* Products */;
 			projectDirPath = "";
@@ -566,6 +575,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C2CEB1462E98FB800007005C /* XCLocalSwiftPackageReference "../../PDFConverter" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../PDFConverter;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2CEB1472E98FB800007005C /* PDFConverter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PDFConverter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2049D5D2E7FF08200A47743 /* Project object */;
 }
