@@ -8,6 +8,7 @@
 import SwiftUI
 import Observation
 import PhotosUI
+import PDFConverter
 
 @Observable
 final class PDFGeneratorViewModel {
@@ -34,7 +35,7 @@ extension PDFGeneratorViewModel {
     
     /// サンプル画像を選ぶ選択肢タップ
     func selectImageFromSample() {
-        //uiImage = ResourceUtil.selectSampleImage()
+        uiImage = ResourceUtil.selectSampleImage()
     }
     
     /// PDFを出力
@@ -42,7 +43,7 @@ extension PDFGeneratorViewModel {
         guard let uiImage else { return }
         let _ = FileManager.default.temporaryDirectory
             .appendingPathComponent("sample.pdf")
-        //pdfURL = PDFService.makePDFURL(from: [uiImage])
+        pdfURL = PDFService.makePDFURL(from: [uiImage])
     }
     
     /// リセット
